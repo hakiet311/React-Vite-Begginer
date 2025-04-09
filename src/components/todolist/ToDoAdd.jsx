@@ -16,6 +16,13 @@ const ToDoAdd = (props) => {
     };
     return newToDo;
   };
+
+  const handleAdd = () => {
+    if (valueInput !== "") {
+      setToDoList([...toDoList, handleValueInput(valueInput)]);
+      setValueInput("");
+    } else alert("Empty content");
+  };
   //
   return (
     <div className=" flex gap-3 justify-center items-center">
@@ -31,12 +38,7 @@ const ToDoAdd = (props) => {
       />
       <button
         className="py-2 px-8 bg-sky-600 text-white rounded-lg cursor-pointer hover:bg-sky-700 transition-all duration-300"
-        onClick={() => {
-          if (valueInput !== "") {
-            setToDoList([...toDoList, handleValueInput(valueInput)]);
-            setValueInput("");
-          } else alert("Empty content");
-        }}
+        onClick={handleAdd}
       >
         Add
       </button>

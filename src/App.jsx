@@ -19,7 +19,7 @@ const App = () => {
       <ToDoAdd setToDoList={setToDoList} toDoList={toDoList}></ToDoAdd>
       {toDoList.length === 0 ? (
         <img
-          className="w-32 animate-bounce m-auto hover:shadow-lg hover:shadow-sky-600/20 transition-all duration-200 mt-24"
+          className="w-32 animate-spin m-auto hover:shadow-lg hover:shadow-sky-600/20 transition-all duration-200 mt-24"
           src={reactLogo}
           alt="Logo"
         />
