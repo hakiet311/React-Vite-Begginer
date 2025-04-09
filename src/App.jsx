@@ -1,7 +1,10 @@
-import ToDoAdd from "./components/todolist/ToDoAdd";
-import ToDoList from "./components/todolist/ToDoList";
+import ToDoAdd from "./components/toDoComponent/ToDoAdd";
+import ToDoList from "./components/toDoComponent/ToDoList";
 import reactLogo from "./assets/react.svg";
+import Header from "./components/layout/header";
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
+``;
 
 const App = () => {
   const list = [];
@@ -13,6 +16,7 @@ const App = () => {
   };
   return (
     <div className="space-y-6 w-full">
+      <Header></Header>
       <h1 className="font-bold uppercase text-3xl text-white text-center">
         To do list
       </h1>

@@ -5,7 +5,7 @@ const ToDoList = (props) => {
     deleteToDo(id);
   };
   return (
-    <section className="p-3  m-auto bg-slate-700 text-sky-200 rounded-lg shadow-md shadow-slate-500/10">
+    <section className="p-3 w-[90%]  m-auto bg-slate-700 text-sky-200 rounded-lg shadow-md shadow-slate-500/10">
       <ul className="space-y-2 *:border-b-[1px] *:py-2">
         {toDoList.map((toDo, index) => {
           return (
