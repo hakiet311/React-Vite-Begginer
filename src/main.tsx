@@ -1,16 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./output.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginPage from "./pages/login.jsx";
 import SignUpPage from "./pages/signup.jsx";
+import App from "./App.jsx";
+import ToDoApp from "./components/toDoComponent/ToDoApp.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
     children: [
+      {
+        index: true,
+        element: <ToDoApp></ToDoApp>,
+      },
       {
         path: "/login",
         element: <LoginPage></LoginPage>,

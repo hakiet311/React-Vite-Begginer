@@ -25,7 +25,7 @@ const ToDoAdd = (props) => {
   };
   //
   return (
-    <div className=" flex gap-3 justify-center items-center">
+    <div className=" flex gap-3 justify-center items-center px-6">
       <input
         className="bg-slate-100 w-[80%] lg:w-[50%] rounded-lg focus:outline-0 py-2 px-4 focus:shadow-xl focus:shadow-slate-100/20 text-slate-900 transition-all duration-300"
         type="text"
